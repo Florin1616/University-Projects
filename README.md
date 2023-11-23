@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Graph Algorithms<br /> 
 
 :file_folder: Semester 3 <br />
-&nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Databases<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:[Databases](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases)<br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Advanced Programming Methods<br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Computer Networks<br />
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Probabilities and Statistics<br /> 
