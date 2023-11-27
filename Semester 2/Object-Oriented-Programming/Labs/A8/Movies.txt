@@ -1,0 +1,10 @@
+The Godfather|Crime|https://www.youtube.com/watch?v=sY1S34973zA|1972|1300
+The Dark Knight|Action|https://www.youtube.com/watch?v=EXeTwQWrcwY|2008|1700
+12 Angry Men|Drama|https://www.youtube.com/watch?v=fSG38tk6TpI|1957|900
+Schindler's List|Drama|https://www.youtube.com/watch?v=gG22XNhtnoY|1993|1200
+The Return of the King|Adventure|https://www.youtube.com/watch?v=r5X-hFf6Bwo|2003|2000
+Pulp Fiction|Crime|https://www.youtube.com/watch?v=s7EdQ4FqbhY|1994|1500
+The Good, the Bad and the Ugly|Western|https://www.youtube.com/watch?v=WCN5JJY_wiA|1966|800
+Fight Club|Drama|https://www.youtube.com/watch?v=qtRKdVHc-cE|1999|1400
+Forrest Gump|Drama|https://www.youtube.com/watch?v=bLvqoHBptjg|1994|1600
+Batman|Action|https://www.youtube.com/watch?v=mqqft2x_Aa4&ab_channel=WarnerBros.Pictures|2000|12
