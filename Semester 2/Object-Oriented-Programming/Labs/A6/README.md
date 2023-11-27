@@ -1,5 +1,4 @@
 # Assignment 06
-
 ## Problem Statement
 For your solution to the previous assignment (Assignment 04-05), add the following features:
 1. Replace the DynamicVector with the STL vector and modify your source code accordingly.
