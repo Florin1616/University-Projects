@@ -1,0 +1,21 @@
+[2023-03-30 17:00:59] [info] Start Program:
+Path:"C:\Users\Florin\source\repos\a23-Florin1616\x64\Debug\lab2-3oop.exe"
+Arguments:
+Working directory: "C:\Users\Florin\source\repos\a23-Florin1616\"
+Modules: Selected: C:\Users\Florin\source\repos\a23-Florin1616\x64\Debug\lab2-3oop.exe Excluded: 
+Sources: Selected: C:\Users\Florin\source\repos\a23-Florin1616 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Florin\AppData\Local\Temp\k30ob0i1.zfm 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-03-30 17:00:59] [info] Module: C:\Users\Florin\source\repos\a23-Florin1616\x64\Debug\lab2-3oop.exe is selected because it matches selected pattern: C:\Users\Florin\source\repos\a23-Florin1616\x64\Debug\lab2-3oop.exe
+[2023-03-30 17:01:00] [info] ----------------------------------------------------
+[2023-03-30 17:01:00] [info] Coverage binary generated in file: C:\Users\Florin\AppData\Local\Temp\k30ob0i1.zfm
+[2023-03-30 17:01:00] [info] ----------------------------------------------------
