@@ -1,0 +1,94 @@
+%a
+% Model matematic:
+% insert_pow(l1...ln, v, pos, index) =
+%	[], n = 0
+%	l1 + v + insert_pow(l2...ln, v, pos * 2, index + 1), index = pos
+%	l1 + insert_pow(l2...ln, v, pos, index + 1), pos != index
+
+% insert_pow(L:list, V:number, POS:number, INDEX:number, R:list)
+% insert_pow(i, i, i, i, o)
+
+insert_pow([], _, _, _, []).
+insert_pow([H|T], V, POS, INDEX, [H, V|R]) :- POS =:= INDEX,
+    New_pos is POS * 2,
+    New_index is INDEX + 1,
+    insert_pow(T, V, New_pos, New_index, R).
+insert_pow([H|T], V, POS, INDEX, [H|R]) :- POS =\= INDEX,
+    New_index is INDEX + 1,
+    insert_pow(T, V, POS, New_index, R).
+
+% insert(L:list, V:number, R:list)
+% insert(i, i, o)
+
+insert(L, V, R) :- insert_pow(L, V, 1, 1, R).
+
+
+
+%b
+% Model matematic:
+% gcd(a, b) =
+%	a, b = 0
+%	b, a = 0
+%	gcd(a % b, b), a >= b
+%	gcd(a, b % a), a < b
+
+% gcd(A:number, B:number, R:number)
+% gcd(i, i, o)
+
+gcd(0, B, B) :- !.
+gcd(A, 0, A) :- !.
+gcd(A, B, R) :- A >= B,
+    A1 is A mod B,
+    gcd(A1, B, R), !.
+gcd(A, B, R) :- A < B,
+    B1 is B mod A,
+    gcd(A, B1, R), !.
+
+% Model matematic:
+% lcm(a, b) = a * b / gcd(a, b)
+
+% lcm(A:number, B:number, R:number)
+% lcm(i, i, o)
+
+lcm(A, B, R) :-
+    gcd(A, B, RGCD),
+    R is A * B / RGCD.
+
+lcm_list([], 1).
+lcm_list([H|T], Result) :-
+    lcm_list(T, TempResult),
+    lcm(H, TempResult, Result).
+
+
+
+
+
+
+
+
+% Base case: An empty list has a length of 0.
+list_length([], 0).
+
+% Recursive case: The length of a non-empty list is the length of the tail (the rest of the list) plus 1.
+list_length([_|Tail], Length) :-
+    list_length(Tail, TailLength),
+    Length is TailLength + 1.
+
+% Base case: X^0 is 1.
+power(_, 0, 1).
+
+% Recursive case: X^Y = X * X^(Y-1).
+power(X, Y, Result) :-
+    Y > 0,
+    Y1 is Y - 1,
+    power(X, Y1, TempResult),
+    Result is X * TempResult.
+
+% Predicate to convert a list of digits into a number
+lista_numar([], 0).  % Base case: An empty list is equivalent to the number 0.
+lista_numar([H|T], R) :-
+    list_length([H|T], L),  % Calculate the length of the list
+    power(10, L-1, P),      % Calculate the power of 10 to the (L-1)th position
+    lista_numar(T, SubResult),  % Recursively process the rest of the list
+    H1 is H * P,              % Calculate the contribution of the current digit
+    R is H1 + SubResult.      % Calculate the final result.
