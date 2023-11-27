@@ -11,7 +11,6 @@
 ## Week 5
 - Solve the requirements related to the administrator mode.
 - Define the `DynamicVector` class which provides the specific operations: `add`, `remove`, `length`, etc. The array of elements must be dynamically allocated.
-
 ## Week 6
 - Solve all problem requirements.
 - `DynamicVector` must be a class template.
