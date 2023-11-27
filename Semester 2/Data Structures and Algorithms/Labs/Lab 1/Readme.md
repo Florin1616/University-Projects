@@ -13,5 +13,4 @@ these functions, but it is not a good practice to use them. <br/>
 - If you need auxiliary functions, fell free to add them to the interface of the ADT, but make  <br/>
 them private.<br/>
 
-2. ADT Matrix – represented as a sparse matrix, compressed sparse column representation<br/>
-using dynamic arrays.
+## 2. ADT Matrix – represented as a sparse matrix, compressed sparse column representation using dynamic arrays.
