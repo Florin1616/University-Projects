@@ -1,7 +1,7 @@
 # University-Projects
 
 ## :file_folder: Semester 1 
-- [Fundamentals of Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%201/Fundamentals%20of%20Programming)
+* [Fundamentals of Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%201/Fundamentals%20of%20Programming)
 - [Computer Systems Architecture](https://github.com/Florin1616/University-Projects/tree/main/Semester%201/Computer%20Systems%20Architecture)
 
 ## :file_folder: Semester 2 
