@@ -5,7 +5,6 @@
 You should set up a C++ compiler and an IDE. Choose any IDE and compiler you prefer. Later on in the semester we will also work with the Qt framework. Microsoft Visual Studio 2022 can be integrated with Qt development tools.
 
 If you choose Microsoft Visual Studio, the *Community* version is free.
-
 Create a new C project and a simple “Hello, World!” C application.
 
 **Assignment 1 consists of the following requirements and is due in week 2.**
