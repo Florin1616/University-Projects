@@ -11,4 +11,7 @@ memcpy and realloc on memory that was allocated with new. Also, if the memory lo
 contains objects, undefined behavior can occur. The implementation might still work with  <br/>
 these functions, but it is not a good practice to use them. <br/>
 - If you need auxiliary functions, fell free to add them to the interface of the ADT, but make  <br/>
-them private.
+them private.<br/>
+
+2. ADT Matrix – represented as a sparse matrix, compressed sparse column representation<br/>
+using dynamic arrays.
