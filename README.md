@@ -14,5 +14,5 @@
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Advanced Programming Methods<br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Computer Networks<br />
 &nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:[Probabilities and Statistics](https://github.com/Florin1616/University-Projects/tree/ef6c57ac0b1e3eb1f59d38b447d88060a1b48334/Semester%203/Probabilities%20and%20Statistics)<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:Logical and Functional Programming<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;:white_medium_square:[Logical and Functional Programming](https://github.com/Florin1616/University-Projects/tree/6ecf14e761f952618936dfc07f10fd313620e9e7/Semester%203/Logical%20and%20Functional%20Programming)<br /> 
 
