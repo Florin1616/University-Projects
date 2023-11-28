@@ -8,7 +8,7 @@
 - :building_construction:[Data Structures and Algorithms](https://github.com/Florin1616/University-Projects/tree/377f89e6b45d424ab2542c1db26c49590656521e/Semester%202/Data%20Structures%20and%20Algorithms)
 - :fire_extinguisher:[Object Oriented Programming](https://github.com/Florin1616/University-Projects/tree/439c27ad51457f0bc4b937de36a15ab948d9ed7b/Semester%202/Object-Oriented-Programming)
 - :dvd:[Operating Systems](https://github.com/Florin1616/University-Projects/tree/8b66bf27c5d162174a771ba4c2fbcbc9bc8860e6/Semester%202/Operating%20Systems)
-- :world_map:Graph Algorithms
+- :world_map:[Graph Algorithms](https://github.com/Florin1616/University-Projects/tree/8eee7fab779e9e4c853917234089b5499949e62f/Semester%202/Graph%20Algorithms)
 
 ## :file_folder: Semester 3 
 - :printer:[Databases](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases)
