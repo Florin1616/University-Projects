@@ -5,7 +5,7 @@
 - :desktop_computer:[Computer Systems Architecture](https://github.com/Florin1616/University-Projects/tree/main/Semester%201/Computer%20Systems%20Architecture)
 
 ## :file_folder: Semester 2 
-- [Data Structures and Algorithms](https://github.com/Florin1616/University-Projects/tree/377f89e6b45d424ab2542c1db26c49590656521e/Semester%202/Data%20Structures%20and%20Algorithms)
+- :building_construction:[Data Structures and Algorithms](https://github.com/Florin1616/University-Projects/tree/377f89e6b45d424ab2542c1db26c49590656521e/Semester%202/Data%20Structures%20and%20Algorithms)
 - :fire_extinguisher:[Object Oriented Programming](https://github.com/Florin1616/University-Projects/tree/439c27ad51457f0bc4b937de36a15ab948d9ed7b/Semester%202/Object-Oriented-Programming)
 - :dvd:[Operating Systems](https://github.com/Florin1616/University-Projects/tree/8b66bf27c5d162174a771ba4c2fbcbc9bc8860e6/Semester%202/Operating%20Systems)
 - :world_map:Graph Algorithms
