@@ -1,0 +1,78 @@
+Program state
+File Table:  
+Exe Stack: string varf | varf=C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | Open(varf) | int varc | Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)  
+Sym Table:  
+Output Console: {} 
+
+Program state
+File Table:  
+Exe Stack: varf=C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | Open(varf) | int varc | Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)string varf  
+Sym Table:  
+Output Console: {} 
+
+Program state
+File Table:  
+Exe Stack: varf=C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | Open(varf) | int varc | Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)  
+Sym Table: varf-> |  
+Output Console: {} 
+
+Program state
+File Table:  
+Exe Stack: Open(varf) | int varc | Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)varf=C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in  
+Sym Table: varf-> |  
+Output Console: {} 
+
+Program state
+File Table:  
+Exe Stack: Open(varf) | int varc | Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in |  
+Output Console: {} 
+
+Program state
+File Table:  
+Exe Stack: int varc | Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)Open(varf)  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in |  
+Output Console: {} 
+
+Program state
+File Table: C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in->java.io.BufferedReader@5cb0d902 |  
+Exe Stack: Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)int varc  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in |  
+Output Console: {} 
+
+Program state
+File Table: C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in->java.io.BufferedReader@5cb0d902 |  
+Exe Stack: Read from varf into varc | print(varc) | Read from varf into varc | print(varc) | close(varf)  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | varc->0 |  
+Output Console: {} 
+
+Program state
+File Table: C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in->java.io.BufferedReader@5cb0d902 |  
+Exe Stack: print(varc) | Read from varf into varc | print(varc) | close(varf)Read from varf into varc  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | varc->0 |  
+Output Console: {} 
+
+Program state
+File Table: C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in->java.io.BufferedReader@5cb0d902 |  
+Exe Stack: Read from varf into varc | print(varc) | close(varf)print(varc)  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | varc->15 |  
+Output Console: {} 
+
+Program state
+File Table: C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in->java.io.BufferedReader@5cb0d902 |  
+Exe Stack: print(varc) | close(varf)Read from varf into varc  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | varc->15 |  
+Output Console: {15 } 
+
+Program state
+File Table: C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in->java.io.BufferedReader@5cb0d902 |  
+Exe Stack: close(varf)print(varc)  
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | varc->50 |  
+Output Console: {15 } 
+
+Program state
+File Table:  
+Exe Stack:   
+Sym Table: varf->C:\SEMESTRUL 3 UBB\MAP\LABS\HWLAB3\test.in | varc->50 |  
+Output Console: {15 50 } 
+
