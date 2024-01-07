@@ -22,7 +22,6 @@ public class ForkStmt implements StatementInterface {
     @Override
     public PrgState execute(PrgState state ) throws MyException {
         DictionaryInterface<String, ValueInterface> symbolTable = state.getSymTable();
-        //TODO SE POATE SA SE FUTA AICI
         ListInterface<ValueInterface> out = state.getOut();
         DictionaryInterface<StringValue, BufferedReader> fileTable = state.getFileTable();
         HeapInterface heap = state.getHeap();
