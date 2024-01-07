@@ -4,13 +4,7 @@ import Model.Exceptions.MyException;
 import Model.Statements.StatementInterface;
 import Model.Values.StringValue;
 import Model.Values.ValueInterface;
-import Model.Values.ValueInterface;
-import com.sun.jdi.Value;
-
-import javax.swing.plaf.nimbus.State;
 import java.io.BufferedReader;
-import java.util.Map;
-import java.util.Vector;
 
 public class PrgState {
     private StackInterface<StatementInterface> executionStack;
@@ -20,84 +14,59 @@ public class PrgState {
     private DictionaryInterface<StringValue, BufferedReader> fileTable;
     private HeapInterface heap;
 
-//    private Integer id_thread;
-//
-//    static Vector<Integer> usedId = new Vector<>();
-    private static int stateID;
+    private TypeTable typeTable;
+
+    private int stateID;
     private static int freeID = 0;
+
 
     public static synchronized int getNewPrgStateID() {
         ++freeID;
         return freeID;
     }
 
-
-//    public PrgState(StackInterface<StatementInterface> stk, DictionaryInterface<String, ValueInterface> symtbl, ListInterface<ValueInterface> ot,DictionaryInterface<StringValue, BufferedReader> ft,StatementInterface prg, HeapInterface heap){
-//        this.executionStack = stk;
-//        this.symbolTable = symtbl;
-//        this.outputList = ot;
-//        this.fileTable = ft;
-//        this.originalProgram = prg;
-//        this.heap = heap;
-//        this.executionStack.push(prg);
-//
-//        stateID = getNewPrgStateID();
-////        usedId.add(id_thread);
-//
-//    }
-//return new PrgState(newStk, newSymTable, out, fileTable, heap, statement);
-    public PrgState(StackInterface<StatementInterface> executionStack, DictionaryInterface<String, ValueInterface> symbolTable, ListInterface<ValueInterface> outputConsole, DictionaryInterface<StringValue, BufferedReader> fileTable, HeapInterface heapTable, StatementInterface originalProgram) {
+    public PrgState(StackInterface<StatementInterface> executionStack, DictionaryInterface<String, ValueInterface> symbolTable, ListInterface<ValueInterface> outputConsole, DictionaryInterface<StringValue, BufferedReader> fileTable, HeapInterface heapTable, StatementInterface originalProgram, TypeTable typeTable) {
         this.executionStack = executionStack;
         this.symbolTable = symbolTable;
         this.outputList = outputConsole;
         this.fileTable = fileTable;
         this.heap = heapTable;
         this.originalProgram = originalProgram;
-
+        this.typeTable = typeTable;
         stateID = getNewPrgStateID();
 
         this.executionStack.push(originalProgram);
 
     }
 
-    public PrgState(StatementInterface originalProgram){
+    public PrgState(StatementInterface originalProgram) throws MyException {
         this.executionStack = new MyStack<>();
         this.symbolTable = new MyDictionary<>();
         this.outputList = new MyList<>();
         this.originalProgram = originalProgram;
         this.fileTable = new MyDictionary<>();
         this.heap = new MyHeap();
+        typeTable = new TypeTable();
+        this.originalProgram.typecheck(typeTable);
+
+        this.stateID = getNewPrgStateID();
+
         this.executionStack.push(originalProgram);
-
-        stateID = getNewPrgStateID();
     }
-
-//    private int generateId() {
-//        int newId = 1;
-//        while (usedId.contains(newId)) {
-//            newId++;
-//        }
-//        return newId;
-//    }
 
     public boolean isNotCompleted() {
         return !executionStack.isEmpty();
     }
-
-    public Integer getId_thread() {
-        return stateID;
-    }
-
-    public void setId_thread(Integer id_thread) {
-        this.stateID = id_thread;
-    }
-
 
     public PrgState oneStep() throws MyException {
         if (executionStack.isEmpty())
             throw new MyException("Stack empty");
         StatementInterface currentStatement = executionStack.pop();
         return currentStatement.execute(this);
+    }
+
+    public TypeTable getTypeTable(){
+        return typeTable;
     }
 
     public StackInterface<StatementInterface> getStack(){
@@ -143,7 +112,6 @@ public class PrgState {
         return originalProgram;
     }
 
-
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder();
@@ -157,6 +125,5 @@ public class PrgState {
         str.append("\n");
         return str.toString();
     }
-
 
 }
