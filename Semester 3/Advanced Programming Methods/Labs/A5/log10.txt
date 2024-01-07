@@ -150,7 +150,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->22 |  
 Output Console: {} 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack: print(v) | print(rH(a))  
@@ -166,7 +166,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->22 |  
 Output Console: {} 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack: print(v) | print(rH(a))  
@@ -182,7 +182,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->22 |  
 Output Console: {} 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack: print(rH(a))print(v)  
@@ -198,7 +198,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->22 |  
 Output Console: {} 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack: print(rH(a))print(v)  
@@ -214,7 +214,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->22 |  
 Output Console: {} 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack: print(rH(a))  
@@ -230,7 +230,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->30 |  
 Output Console: {10 } 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack: print(rH(a))  
@@ -246,7 +246,7 @@ Sym Table: a->(1, int ) | v->10 |
 Heap: 1->30 |  
 Output Console: {10 } 
 
-Thread number id: 11
+Thread number id: 10
 Program state
 File Table:  
 Exe Stack:   
