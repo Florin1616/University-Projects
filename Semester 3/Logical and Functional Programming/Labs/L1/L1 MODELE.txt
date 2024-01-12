@@ -1,0 +1,57 @@
+a) removeElementFromPos(l1, l2, ..., ln, pos) = {
+	[], if n = 0
+	[l2, ..., ln], if pos = 1
+	l1 ∪ removeElementFromPos(l2, ..., ln, pos - 1), otherwise
+}
+
+b) reversed(l1, l2, ..., ln, tail) = {
+	tail, if n = 0
+	reversed(l2, ..., ln, l1 ∪ tail), otherwise
+} 
+
+successorNb(l1, l2, ..., ln) = {
+	{0} ∪ successorNb(l2, ..., ln), if l1 = 9 and n != 1
+	{0} ∪ {1} , if l1 = 9 and n = 1
+	{l1 + 1} ∪ (l2, ..., ln), otherwise
+}
+
+c) contains(l1, l2, ..., ln, elem) = {
+	false, if n = 0
+	true, if l1 = elem
+	contains(l2, ..., ln, elem)
+}
+
+concat(l1, l2, ..., ln, List) = {
+	List, if n = 0
+	l1 ∪ concat(l2, ..., ln, List), otherwise
+}
+
+createLinearList(l1, l2,..., ln) = {
+	[], if n = 0
+	l1 ∪ createLinearList(l2, ..., ln), if l1 is an atom
+	concatenate(createLinearList(l1), createLinearList(l2, ..., ln)), if l1 is a list
+} 
+
+reversed(l1, l2, ..., ln, tail) = {
+	tail, if n = 0
+	reversed(l2, ..., ln, l1 ∪ tail), otherwise
+}
+
+setOfAtoms(l1, l2, ..., ln, tail) = {
+	tail, if n = 0
+	setOfAtoms(l2, ..., ln, tail), if contains(tail, l1) is true
+	setOfAtoms(l2, ..., ln, l1 ∪ tail), otherwise
+}
+
+d)
+contains(l1, l2, ..., ln, elem) = {
+	false, if n = 0
+	true, if l1 = elem
+	contains(l2, ..., ln, elem), otherwise
+}
+
+checkIfSet(l1, l2, ..., ln) = {
+	true, if n = 0
+	false, if contains(l2, ..., ln, l1) is true
+	checkIfSet(l2, ..., ln), otherwise
+}
