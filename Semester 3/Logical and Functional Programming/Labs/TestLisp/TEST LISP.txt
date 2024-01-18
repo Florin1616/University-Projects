@@ -1,0 +1,60 @@
+;myAppend(l1....ln, k1....km) =
+; = k1...km, if n = 0
+; {l1} U myAppend (l2...ln,k1...km), otherwise
+
+(defun myAppend (l k)
+    (cond
+        ((null l) k)
+        (t (cons (car l) (myAppend (cdr l) k)))
+    )
+)
+
+; linearizeList(l1l2...ln) = 
+; = nil, if n = 0
+; = myAppend(linearizeList(l1), (linearizeList(l2...ln))), if l1 is a list
+; = {l1} U linearizeList(l2...ln) , if l1 is a non-numerical atom
+; = linearizeList(l2...ln) , otherwise
+
+(defun linearizeList (l)
+    (cond
+        ((null l) nil)
+        ((listp (car l)) (myAppend (linearizeList (car l)) (linearizeList (cdr l)))) 
+        ((and (atom (car l)) (not (numberp (car l)))) 
+         (cons (car l) (linearizeList (cdr l))))
+        (t (linearizeList (cdr l))) 
+    )
+)
+
+
+; checkExistence(l1l2...ln, elem) = 
+; = nil (false), if n = 0
+; = true , if l1 = elem
+; = checkExistence(l2...ln, elem), otherwise
+
+(defun checkExistence(l elem)
+    (cond
+        ((null l) nil)
+        ((equal (car l) elem) t)
+        (t (checkExistence (cdr l) elem))
+    )
+)
+
+; toSet(l1l2...ln, r) = 
+; = r, if n = 0
+; = toSet(l2...ln, r) , if checkExistence(r, l1) = true
+; = toSet(l2...ln, {l1} U r) , otherwise
+
+(defun toSet(l r)
+  (cond
+    ((null l) r)
+    ((checkExistence r (car l)) (toSet (cdr l) r))
+    (t (toSet (cdr l) (myAppend r (list (car l)))))
+  )
+)
+
+(defun mainC (l)
+  (toSet (linearizeList l) (list))
+)
+
+(print (mainC '(((A B) 2 C) 3 (D 1 E))))
+
