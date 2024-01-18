@@ -11,7 +11,7 @@
 - :world_map:[Graph Algorithms](https://github.com/Florin1616/University-Projects/tree/8eee7fab779e9e4c853917234089b5499949e62f/Semester%202/Graph%20Algorithms)
 
 ## :file_folder: Semester 3 
-- :printer:[Databases](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases)
+- :printer:[Databases]([https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases](https://github.com/Florin1616/University-Projects/tree/f0bd5f7fb64aa1a4ed2930527a957d7062dedf91/Semester%203/Databases))
 - :bulb:[Advanced Programming Methods](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Advanced%20Programming%20Methods/Labs)
 - :electric_plug:[Computer Networks](https://github.com/Florin1616/University-Projects/tree/1ccdaf30e339fe2b183e06d4e883314770196b74/Semester%203/Computer%20Networks)
 - :chart_with_upwards_trend:[Probabilities and Statistics](https://github.com/Florin1616/University-Projects/tree/ef6c57ac0b1e3eb1f59d38b447d88060a1b48334/Semester%203/Probabilities%20and%20Statistics)
