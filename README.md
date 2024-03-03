@@ -17,10 +17,10 @@
 - :chart_with_upwards_trend:[Probabilities and Statistics](https://github.com/Florin1616/University-Projects/tree/ef6c57ac0b1e3eb1f59d38b447d88060a1b48334/Semester%203/Probabilities%20and%20Statistics)
 - :skull:[Logical and Functional Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Logical%20and%20Functional%20Programming)
 
-- ## :file_folder: Semester 4
-- - :printer:[Database Management System](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases)
+## :file_folder: Semester 4
+- :printer:[Database Management System](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases)
 - :bulb:[Web Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Advanced%20Programming%20Methods/Labs)
 - :electric_plug:[Artificial Intelligence](https://github.com/Florin1616/University-Projects/tree/1ccdaf30e339fe2b183e06d4e883314770196b74/Semester%203/Computer%20Networks)
 - :chart_with_upwards_trend:[Software Engineering](https://github.com/Florin1616/University-Projects/tree/ef6c57ac0b1e3eb1f59d38b447d88060a1b48334/Semester%203/Probabilities%20and%20Statistics)
 - :skull:[Systems for Design and Implementation](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Logical%20and%20Functional%20Programming)
--  
+  
