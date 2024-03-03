@@ -20,7 +20,7 @@
 ## :file_folder: Semester 4
 - :briefcase:[Database Management System](https://github.com/Florin1616/University-Projects/tree/main/Semester%204/Database%20Management%20Systems)
 - :desktop_computer:[Web Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%204/Web%20Programming)
-- :flying_saucer:[Artificial Intelligence](https://github.com/Florin1616/University-Projects/tree/1ccdaf30e339fe2b183e06d4e883314770196b74/Semester%203/Computer%20Networks)
-- :electric_plug:[Software Engineering](https://github.com/Florin1616/University-Projects/tree/ef6c57ac0b1e3eb1f59d38b447d88060a1b48334/Semester%203/Probabilities%20and%20Statistics)
-- :chart_with_downwards_trend:[Systems for Design and Implementation](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Logical%20and%20Functional%20Programming)
+- :flying_saucer:[Artificial Intelligence](https://github.com/Florin1616/University-Projects/tree/main/Semester%204/Artificial%20Intelligence)
+- :electric_plug:[Software Engineering](https://github.com/Florin1616/University-Projects/tree/main/Semester%204/Software%20Engineering)
+- :chart_with_downwards_trend:[Systems for Design and Implementation](https://github.com/Florin1616/University-Projects/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation)
   
