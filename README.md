@@ -18,7 +18,7 @@
 - :skull:[Logical and Functional Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Logical%20and%20Functional%20Programming)
 
 ## :file_folder: Semester 4
-- :briefcase:[Database Management System](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Databases)
+- :briefcase:[Database Management System](https://github.com/Florin1616/University-Projects/tree/main/Semester%204/Database%20Management%20Systems)
 - :desktop_computer:[Web Programming](https://github.com/Florin1616/University-Projects/tree/main/Semester%203/Advanced%20Programming%20Methods/Labs)
 - :flying_saucer:[Artificial Intelligence](https://github.com/Florin1616/University-Projects/tree/1ccdaf30e339fe2b183e06d4e883314770196b74/Semester%203/Computer%20Networks)
 - :electric_plug:[Software Engineering](https://github.com/Florin1616/University-Projects/tree/ef6c57ac0b1e3eb1f59d38b447d88060a1b48334/Semester%203/Probabilities%20and%20Statistics)
