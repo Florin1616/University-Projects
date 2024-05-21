@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Destinations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Browse Destinations</h1>
+        <a href="Backend/index.php" class="btn btn-primary btn-lg btn-block mb-3">Back to Home</a>
+        <form action="" method="get" id="countryForm">
+            <select name="country" id="countrySelect" class="form-control">
+                <option value="">Select Country</option>
+            </select>
+        </form>
+        <div id="message"></div>
+        <div class="row" id="destinationContainer">
+        </div>
+        <div class="pagination" id="paginationContainer">
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'Backend/browse-destinations.php',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    $.each(data, function(index, country) {
+                        $('#countrySelect').append($('<option>', { 
+                            value: country,
+                            text: country 
+                        }));
+                    });
+                },
+                error: function(xhr, status, error) {
+                    $('#message').html('<div class="alert alert-danger">Error fetching countries: ' + error + '</div>');
+                }
+            });
+
+            $('#countrySelect').change(function() {
+                var country = $(this).val();
+
+                $.ajax({
+            url: 'Backend/get_destination_by_name.php',
+            method: 'GET',
+            data: {country: country},
+            dataType: 'json',
+            success: function(data) {
+                $('#destinationContainer').empty();
+
+                $.each(data, function(index, destination) {
+                    $('#destinationContainer').append(
+                        '<div class="col-md-4">' +
+                        '<div class="card mb-4">' +
+                        '<div class="card-body">' +
+                        '<h5 class="card-title">' + destination.name + '</h5>' +
+                        '<h6 class="card-subtitle mb-2 text-muted">' + destination.country + '</h6>' +
+                        '<p class="card-text">' + destination.description + '</p>' +
+                        '<p class="card-text"><small class="text-muted">Tourist Targets: ' + destination.tourist_targets + '</small></p>' +
+                        '<p class="card-text"><small class="text-muted">Estimated Cost: ' + destination.estimated_cost + '</small></p>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>'
+                    );
+                });
+            },
+            error: function(xhr, status, error) {
+                $('#message').html('<div class="alert alert-danger">Error fetching destinations: ' + error + '</div>');
+            }
+        });
+    });
+});
+    </script>
+</body>
+</html>
