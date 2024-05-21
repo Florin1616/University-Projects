@@ -1,0 +1,244 @@
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    font-family: "BBC Reith Sans Medium";
+}
+
+span {
+    font-size: small;
+    margin-left: 3px;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 125px;
+    margin-right: 125px;
+    padding: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+nav ul div {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    margin-right: 39px;
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+nav ul div li {
+    margin-right: 10px;
+    display: flex;
+    font-size: 15px;
+}
+
+
+#search_box {
+    height: 35px;
+    width: 220px;
+    background-color: rgb(71, 68, 68);
+    ;
+}
+
+
+#search_box li {
+    margin-left: 9px;
+    margin-right: 1px;
+    display: flex;
+    font-size: 15px;
+}
+
+#welcome h2 {
+    margin: 0;
+    color: #4a4a4a;
+}
+
+#welcome {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+#content ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.red-pipe::before {
+    content: "|";
+    color: red;
+    margin-right: 5px;
+}
+
+.yellow-pipe::before {
+    content: "|";
+    color: yellow;
+    margin-right: 5px;
+}
+
+.blue-pipe::before {
+    content: "|";
+    color: dodgerblue;
+    margin-right: 5px;
+}
+
+.purple-pipe::before {
+    content: "|";
+    color: rgb(41, 42, 85);
+    margin-right: 5px;
+}
+
+.big-article,
+.title {
+    font-size: 2rem;
+    color: white;
+}
+
+.big-article p,
+h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-gray {
+    color: rgb(197, 197, 197);
+    font-weight: normal;
+    margin: 0;
+}
+
+.big-article-text {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: auto;
+    bottom: 270px;
+    margin-left: 10px;
+}
+
+.big-article-text h3,
+p,
+h5 {
+    margin: 0;
+}
+
+.article-title {
+    color: white;
+    font-weight: normal;
+
+    padding-bottom: 15px;
+}
+
+.small-article {
+    margin-left: 10px;
+    position: relative;
+}
+
+.container {
+    height: 171px;
+    width: 302.25px;
+    position: relative;
+}
+
+
+.article-image {
+    width: 302.25px;
+    height: 171px;
+    left: 0;
+    top: 0;
+}
+
+.article-text {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: 11px;
+    bottom: 8px
+}
+
+.article {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.medium-article-text {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.medium-article-image {
+    position: initial;
+    left: 0;
+    top: 0;
+    width: 403px;
+    height: 235px;
+}
+
+.medium-article-title {
+    margin: 3px;
+}
+
+.medium-article-description {
+    margin: 8px 0 8px 0;
+}
+
+
+.medium-container {
+    height: 2px;
+    width: 410px;
+    position: relative;
+}
+
+.category {
+    color: #4a4a4a;
+    margin: 10px 0 20px 10px;
+}
+
+.medium-article {
+    margin-left: 10px;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 68em
+}   
+
+.big-container {
+    width: 604.5px;
+    height: 351px;
+}
+
+.article-list {
+    list-style-type: none;
+    padding: 0;
+}
