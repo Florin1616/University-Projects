@@ -1,0 +1,35 @@
+.line1 {
+    width: 300px;
+    height: 10px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    background: linear-gradient(to right, black, transparent, black);
+}
+
+.line2 {
+    width: 10px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    background: linear-gradient(to bottom, rgb(150, 128, 50), transparent, rgb(87, 25, 194));
+}
+
+.line3 {
+    width: 10px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+    background: linear-gradient(to bottom, rgb(150, 128, 50), transparent, rgb(87, 25, 194));
+}
+
+.line4 {
+    width: 310px;
+    height: 10px;
+    position: absolute;
+    top: 500px;
+    left: 600px;
+    background: linear-gradient(to right, black, transparent, black);
+}
